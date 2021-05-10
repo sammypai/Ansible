@@ -1,0 +1,4 @@
+---
+ - name: yum check-update
+   hosts: lanhosts
+  shell: 'yum check-update || test $? -eq 100'

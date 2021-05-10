@@ -1,0 +1,7 @@
+---
+ - name: sample test script to install apache web server
+   hosts: lanhosts
+   tasks:
+       - name: install apache
+         apt: name=apache2 state=latest
+         become: yes

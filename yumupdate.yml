@@ -1,0 +1,8 @@
+---
+ - name: update the system
+   hosts: lanhosts
+   become: true
+
+     yum:
+      name: "*"
+      state: latest

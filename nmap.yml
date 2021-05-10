@@ -1,0 +1,10 @@
+---
+ - name: Play 1
+   hosts: lanhosts
+   become: true
+
+   tasks:
+     - name: Install nmap tool
+       yum:
+         name: nmap
+         state: latest
