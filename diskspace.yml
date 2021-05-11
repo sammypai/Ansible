@@ -1,0 +1,13 @@
+# This is to validate the disk space on a system
+#
+---
+  - name: Play1
+    hosts: lanhosts
+    become: yes
+
+    tasks:
+      - name: check diskspace
+        shell: df -h
+...
+
+
