@@ -1,0 +1,14 @@
+
+---
+  - name: Play1
+    hosts: lanhosts
+    become: yes
+
+    tasks:
+      - name: Install a list of packages
+         yum:
+          name:
+                - nginx
+                - postgresql
+                - postgresql-server
+         state: present
